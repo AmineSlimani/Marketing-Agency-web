@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <title>Boot Digital</title>
+</head>
+
+<body>
+
+<!--Nav-->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+    <div class="container">
+      <!--Logo-->
+      <a href="index.html" class="navbar-brand">Boot Digital</a>
+      <!--Menu-->
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <span class="visually-hidden">navbar-toggler-icon</span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul  class="navbar-nav">
+          <li class="navbar-item">
+            <a href="#Home" class="nav-link">Home</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#About" class="nav-link">About</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#features" class="nav-link">Features</a>
+          </li>
+          <!--Dropdown menu-->
+          <li>
+            <div class="dropdown">
+              <button class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Our Producs
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item text-light" href="#products">ebooks</a></li>
+                <li><a class="dropdown-item text-light" href="#products">Templates</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="navbar-item">
+            <a href="#startLearning" class="nav-link">Start Learning</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#faq" class="nav-link">FAQ</a>
+          </li>
+        </ul>
+        <!-- Contact Button -->
+        <button type="button" class="btn btn-success ms-auto" data-bs-toggle="modal" data-bs-target="#contactv2">
+          Get in touch
+        </button>
+        <div class="modal fade" id="contactv2">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <!--Modal title-->
+                <h1 class="modal-title fs-5">Get in touch with us</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <!--Contact Form-->
+                <form>
+                  <div class="mb-2">
+                    <label class="form-label test-dark" >Email address<span class="text-danger">*</span></label>
+                    <input type="email" class="form-control" placeholder="Type your Email here">
+                    <div  class="form-text text-dark">We'll never share your email with anyone else.</div>
+                  </div>
+                  <div class="mb-2">
+                    <label  class="form-label text-dark">Subject<span class="text-danger">*</span></label>
+                    <input type="text" class="form-control"  placeholder="What's the subject ?">
+                  </div>
+                  <div class="mb-2">
+                    <label class="form-label text-dark">Message<span class="text-danger">*</span></label>
+                    <textarea class="form-control" placeholder="Type your message here " rows="5"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-dark w-100 text-lager ">Send message</button>
+                </form>
+              </div>
+             </div>
+          </div>
+        </div>
+        <!--Search Button-->
+        <button type="button" class="searchIcon btn btn-dark" data-bs-toggle="modal" data-bs-target="#search">
+          <i class="bi bi-search"></i>
+        </button>
+        <div class="modal fade" id="search" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" >Search</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="input-group mb-3">
+                    <span class="input-group-text"><i class="bi bi-search"></i></span>
+                    <input type="text" class="form-control" placeholder="Search here" >
+                  </div>
+                  <button type="button" class="btn btn-success w-100">Search</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<!--Hero Section-->
+  <section class="bg-dark text-light p-5  text-sm-start boderBottom ">
+    <div class="container mb-0 mt-5 py-5">
+      <div class="d-sm-flex align-items-center">
+        <div>
+          <!--Title-->
+          <h1>Learn <span class="text-warning">Digital Marketing</span> with <span class="text-primary">Boot Digital</span></h1>
+          <!--Description-->
+          <p class="lead">
+            Crafting a potent digital strategy for forward-thinking companies involves thorough market research and 
+            outpace competitors in the dynamic digital landscape.
+          </p>
+        <!-- Log in Button -->
+        <button type="button" class="btn btn-warning btn-lg mt-4 text-dark" data-bs-toggle="modal" data-bs-target="#sign">
+          Log in
+        </button>
+        <div class="modal fade " id="sign">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5  text-dark">Log in</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <!-- Sign Up Form-->
+                <form class="text-dark">
+                  <div class="mb-3">
+                    <label class="form-label">Email address<span class="text-danger">*</span></label>
+                    <input type="email" class="form-control"  placeholder="Type your Email here">
+                    <div class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Passowrd<span class="text-danger">*</span></label>
+                    <input type="password"  placeholder="Type your Password here" class="form-control" >
+                  </div>
+                  <button type="button" class="btn btn-dark w-100">Log in</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Sign Up Button-->
+        <button type="button" class=" createNewAccountBtn btn btn-primary mt-4 btn-lg" data-bs-toggle="modal" data-bs-target="#signup">
+          Create new account
+        </button>
+        <div class="modal fade" id="signup">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title  text-dark fs-5">Create new account</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-dark">
+                  <!-- Sign Up Form-->
+                  <form>
+                    <div class="mb-3">
+                      <label class="form-label">Your full name <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control" placeholder="Type your name">
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Email address<span class="text-danger">*</span></label>
+                      <input type="email" class="form-control" placeholder="Type your email">
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Passowrd<span class="text-danger">*</span></label>
+                      <input type="password" class="form-control" placeholder="Type your password" >
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Select your gender<span class="text-danger">*</span></label>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected disabled>Select an option</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                      </select>
+                      </div>
+                      <div  class="form-text">We'll never share your information with anyone else.</div><br>
+                    <button type="button" class="btn btn-primary w-100">Create new account</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Image -->
+        <img src="imgs/social-tree.png" class="img-fluid rounded d-none d-lg-block w-50" alt="Digital Marketing Tree">
+      </div>
+    </div>
+  </section>
+
+<!--About Section-->
+  <section id="About" class="bg-light text-dark p-1 text-center">
+    <div class="container mb-0 mt-5 mb-5">
+        <!-- Title -->
+        <h1 class="mb-4">About us</h1>
+        <!-- Description -->
+        <p class="lead mb-5">
+          We are a leading digital marketing education provider, empowering individuals 
+          for success in the digital era through flexible online learning. Join us to master the art 
+          of digital marketing and thrive in the ever-evolving digital landscape.
+        </p>
+        <div class="row ms-auto">
+          <div class="col-lg border p-0">
+            <h1 class="p-3 bg-warning">
+              <span><i class="bi bi-bank"></i></span>
+              <span class="visually-hidden">Bank Icon</span>
+            </h1>
+            <h2 class="mt-5">Our University</h2>
+            <p class="lead text-start p-4">
+              Our university is a prestigious institution renowned for academic excellence.
+               We offer a diverse range of programs, fostering a holistic approach to education. 
+               Our world-class faculty and state-of-the-art facilities provide an enriching
+               learning environment. We prioritize innovation, research, and community engagement,
+               shaping future leaders and global citizens. Join us to embark on a transformative
+               educational journey. Join us to embark on a transformative!
+            </p>
+            <a class="btn btn-warning mb-3 p-3" href="./Page_1.html"><b>Read more</b></a>
+         </div>
+         <div class="col-lg border p-0">
+          <h1 class="p-3 bg-dark text-light">
+            <span><i class="bi bi-info-circle-fill"></i></span>
+            <span class="visually-hidden">info icon</span>
+          </h1>
+          <h2 class="mt-5">Who Are We ?</h2>
+          <p class="lead  text-start p-4">
+            We are a forward-thinking educational institution specializing in digital 
+            marketing. Our dedicated team comprises industry experts and passionate
+            educators. Our mission is to empower individuals with the skills needed 
+            to excel in the digital marketing landscape. Through flexible online 
+            learning, we provide accessible opportunities for personal and professional 
+            growth. Join us to unlock your digital marketing potential and advance 
+            your career.
+          </p>
+          <a class="btn btn-dark mb-3 p-3" href="Page_2.html"><b>Read more</b></a>
+        </div>
+        <div class="col-lg border p-0">
+          <h1 class="p-3 bg-warning">
+            <span><i class="bi bi-bar-chart-fill"></i></span>
+            <span class="visually-hidden">Chart fill icon</span>
+          </h1>
+          <h2  class="mt-5">Our convetion</h2>
+          <p class="lead  text-start p-4">
+              Our convention is a dynamic gathering of industry leaders, innovators,
+              and enthusiasts. It's a platform for networking, knowledge sharing, 
+              and collaboration, where ideas flourish and partnerships thrive. With
+              engaging keynote speakers, insightful workshops, and vibrant discussions,
+              our convention is a catalyst for growth and inspiration. Join us to 
+              connect, learn, and shape the future of our industry. Together, we'll 
+              ignite creativity and drive innovation.
+          </p>
+          <a class="btn btn-warning mb-3 p-3" href="Page_3.html" ><b>Read more</b></a> 
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--Features Section-->
+  <section id="features" class="bg-dark text-light p-5 borderTopBottom ">
+    <div class="container">
+      <div class="d-sm-flex align-items-center">
+        <div>
+          <!-- Title -->
+          <h1>Our<span class="text-warning">features</span></h1>
+          <!-- Description -->
+          <p class="lead mt-5">
+            Our university offers a flexible and industry-aligned digital marketing program. 
+            With online courses, students gain the latest strategies and tools for success in 
+            the ever-evolving digital landscape. Join us to advance your digital marketing career.
+          </p>
+          <!-- Join Us Button -->
+          <button type="button" class="btn btn-light mt-4 btn-lg" data-bs-toggle="modal" data-bs-target="#signup">
+            Join us
+          </button>    
+        </div>
+        <img src="imgs/Woman-Holding-Laptop.png" class="img-fluid rounded d-none d-lg-block w-35" alt="Woman-Holding-Laptop">
+      </div>
+    </div>
+  </section>
+
+<!--Our Products section-->
+<section id="products" class="bg-light text-dark p-5 text-center">
+  <div class="container mb-0 mt-4 mb-5">
+      <!-- Title -->
+      <h1 class="mb-4">Our Products</h1>
+      <!-- Description -->
+      <p class="lead mb-5">
+        Our ebooks offer valuable insights and knowledge in a digital format, providing 
+        a convenient way to learn and grow. Our templates simplify tasks and streamline 
+        processes, making it easy to create professional documents and designs.
+      </p>
+      <div class="row">
+        <!-- Ebooks Section -->
+        <div class="col-lg-6 col-md-12 col-sm-12 mt-3">
+          <div class="container border bg-2">
+            <img src="imgs/ebook.webp" class="img-fluid h-50" alt="ebooks image">
+            <h2 class="mt-5 text-secondary">eBooks</h2>
+            <p class="lead text-start p-4">
+              Our ebooks are thoughtfully designed to enhance efficiency and creativity 
+              in various tasks. They serve as versatile tools, simplifying complex processes
+              and enabling users to produce and save time with our intuitive templates.
+              and enabling users to produce and save time with our intuitive templates.
+            </p>
+            <a class="btn btn-success mb-3 p-3" href="#"><b>Buy now</b></a>
+          </div>
+        </div>
+        <!-- Templates Section -->
+        <div class="col-lg-6 col-md-12 col-sm-12 mt-3">
+          <div class="container border bg-2">
+            <img src="imgs/templates_array.webp" class="img-fluid h-50" alt="templates_array">
+            <h2 class="mt-5 text-secondary">Templates</h2>
+            <p class="lead text-start p-4">
+              Our templates are thoughtfully designed to enhance efficiency and creativity 
+              in various tasks. They serve as versatile tools, simplifying complex processes
+              in various tasks. They serve as versatile tools, simplifying complex processes
+              and enabling users to produce and save time with our intuitive templates.
+              in various tasks. They serve as versatile tools, simplifying complex processes
+
+            </p>
+            <a class="btn btn-success mb-3 p-3" href="#"><b>Buy now</b></a>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+
+<!--Start Learning Section-->
+  <section id="startLearning" class="bg-dark text-light p-5 borderTopBottom">
+    <div class="container">
+      <div class="d-sm-flex align-items-center">
+        <img src="imgs/Digital-Marketing-Services.png" class="img-fluid rounded d-none d-lg-block w-25" alt="Digital-Marketing-Services">
+
+        <div class="px-5">
+          <h1>Make a great <span class="text-warning">Network with experts. </span> </h1>
+          <p class="lead mt-5">
+            Establishing a formidable network of experts is not just a strategic move; 
+            it's the cornerstone of success in today's dynamic and interconnected world. 
+            Building such a network involves curating a diverse and talented group .
+          </p>
+          <button type="button" class="btn btn-light mt-4 btn-lg">
+            Start Learning
+          </button>    
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<!-- FAQ -->
+ <section id="faq" class="container w-75 mb-5 mt-5"> 
+      <h1 class="mb-4 text-center">FAQ : </h1>
+      <p class="lead mb-5 text-center">
+        Certainly, here's a comprehensive list of frequently asked questions (FAQ) about digital marketing :
+      </p>
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+              What is digital marketing?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+              Why is digital marketing important for businesses?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              What are the key components of a digital marketing strategy?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+              How does digital marketing differ from traditional marketing?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+              What are some common digital marketing channels?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+              What is SEO (Search Engine Optimization), and how does it impact digital marketing?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+    </div>
+ </section>
+
+<!--Contact Section-->
+  <section id="contact" class="bg-3 text-lager text-dark p-5">
+    <div class="container p-3">
+      <h1 class="mb-4 text-center">Get in touch with us :</h1>
+      <br>
+      <div class="row">
+        <div class="col-lg">
+          <form class="bg-light p-5 rounded-4 w-100">
+            <div class="mb-2">
+              <label class="form-label test-dark" ><b>Email address</b><span class="text-danger">*</span></label>
+              <input type="email" class="form-control" placeholder="Type your Email here">
+              <div  class="form-text text-dark">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-2">
+              <label  class="form-label text-dark"><b>Subject</b><span class="text-danger">*</span></label>
+              <input type="text" class="form-control"  placeholder="What's the subject ?">
+            </div>
+            <div class="mb-4">
+              <label class="form-label text-dark"><b>Message</b><span class="text-danger">*</span></label>
+              <textarea class="form-control" placeholder="Type your message here " rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark w-100">Send messge</button>
+          </form>
+        </div>  
+
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.782576507769!2d-6.847109178814724!3d33.974625286756186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76d13bc189cf1%3A0xa69f0af9ccedf2b9!2sINGELEC%204!5e0!3m2!1sar!2sma!4v1694723862502!5m2!1sar!2sma" class="col-lg"  referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+<!--Footer-->
+  <footer id="footer" class="bg-dark text-light p-1 borderTop">
+    <div class="container  mt-4 mb-3">
+      <div class="d-sm-flex justify-content-between">
+        <div class="h-6 text-center mb-3">Designed by <span class="text-secondary">Amine Slimani</span></div> 
+
+        <div class="container text-center mb-3">
+          <div class="social-icons">
+              <a href="#" class="text-light me-3"><i class="bi bi-facebook custom-icon "></i></a>
+              <a href="#" class="text-light me-3"><i class="bi bi-twitter custom-icon "></i></a>
+              <a href="#" class="text-light me-3"><i class="bi bi-instagram custom-icon "></i></a>
+              <!-- Add more social icons as needed -->
+          </div>
+      </div>
+
+        <div class="h-6 text-center">All rights reseved to <a href="#home" class="text-warning text-decoration-none">Boot Digital</a> in 2023-2024</div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="js/bootstrap.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/popper.js"></script>
+
+
+
+</body>
+
+</html>

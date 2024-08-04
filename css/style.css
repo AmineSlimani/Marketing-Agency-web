@@ -1,0 +1,40 @@
+.w-35 {
+    width: 35%;
+}
+.bg-1{
+    background-color: #d5d4d42b !important;
+}
+
+.bg-2 {
+    background-color: #d5d4d42b !important;
+}
+
+.bg-3{
+    background-color: #21252912 !important;
+}
+.text-lager {
+    font-size: large;
+}
+.borderTopBottom{
+    border-top:8px solid #FFC107 !important;
+    border-bottom:8px solid #FFC107 !important;
+}
+.borderTop{
+    border-top:8px solid #FFC107 !important;
+}
+.boderBottom{
+    border-bottom: 8px solid #FFC107 !important;
+}
+.searchIcon {
+    height: 40px !important;
+    margin-left: 10px !important;
+}
+.createNewAccountBtn{
+    margin-left: 8px !important;
+}
+.custom-icon {
+    font-size: 1.1rem; 
+}
+.modal-backdrop{
+    display: none;
+}
